@@ -1,0 +1,273 @@
+header .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgb(190, 186, 186);
+    z-index: 1000px;
+}
+
+header .container .left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 30%;
+}
+
+header .container .middle {
+    display: inline-flex;
+    justify-content: center;
+    width: 30%;
+    /* احذف text-decoration من هنا */
+}
+header  ul {
+    list-style-type: none; margin:0; padding:2px;
+    display: inline-flex; justify-content: center; gap: 20px;
+}
+
+header a{
+   display: inline-block; color: grey; 
+   text-decoration: none; 
+}
+
+header .container .right {
+    display: flex;
+    width: 30%;
+    margin:0;
+    justify-content: flex-end;
+}
+header  .right .bt1{
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 16px;
+ border-radius: 40%;
+ color: #000;
+ background-color: rgb(184, 180, 180);
+}
+header .container .right .bt2{
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+ border-radius: 30%;
+ color: #fff;
+ background-color: blue;
+}
+header .container .right .bt1:hover {
+    background-color: rgb(247, 243, 243);
+    color: blue;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+ header .container .right .bt2:hover{
+    
+    background-color: rgb(27, 27, 29);
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.home{
+   display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(247, 241, 241);
+}
+.home .left-home{
+    width: 50%;
+    padding: 20px;
+}
+.home .left-home .btn-new{
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px;
+ border-radius: 30%;
+ color: blue;
+ background-color: rgb(184, 180, 180);
+ overflow: hidden;
+}
+.home .left-home .btn-new:hover{
+    background-color: rgb(247, 243, 243);
+    color: blue;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.home .left-home .info1{
+    font-weight: bold;
+    color: blue;
+}
+.home .left-home .info2{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.home .left-home p{
+    color: grey;
+}
+.home .left-home .btn-explore{
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+ border-radius: 30%;
+ color: #fff;
+ background-color: blue;
+ overflow: hidden;
+ margin-right: 10px;
+}
+.home .left-home .btn-explore:hover{
+    background-color: rgb(247, 243, 243);
+    color: black;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.home .left-home .btn-watch{
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+ border-radius: 30%;
+ color: blue;
+ background-color: #fff;
+ overflow: hidden;
+}
+.home .left-home .btn-watch:hover{
+    background-color: grey;
+    color: white;
+    overflow: hidden;
+    cursor: pointer; 
+}
+.home .left-home .selorry {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.home .left-home .selorry .text1 .h2{
+    font-weight: 700px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.home .left-home .selorry .text2 .h2{
+    font-weight: 700px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.home .left-home .selorry .text3 .h2{
+    font-weight: 700px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+.home .left-home .selorry .p{
+    color: grey;
+}
+.courses {
+    width: 100%;
+    padding: 96px 0;
+    background-color: #F8FAFF;
+}
+
+.courses .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 24px;
+    /* حذفت display: grid من هنا */
+}
+.courses .container .up{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.courses .container .up .para1{
+    color: rgb(62, 62, 158);
+    font-weight: 20;
+    font-size: 10px;
+    margin-bottom: 16px;
+}
+.courses .container .up .para2{
+    color: #000;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.courses .container .up .para3{
+    color: gray;
+    font-weight: 100;
+    font-size: 15px;
+}
+.courses .container .up .carts{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 كروت في صف واحد */
+    gap: 28px;
+}
+
+.courses .container .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 كروت في صف واحد */
+    gap: 28px;
+}
+.courses  h2{
+    font-weight: 700;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.courses .container .card {
+    /* حذفت width: 30% */
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(30, 27, 75, 0.08);
+}
+
+.courses .container .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.courses .container .card h3,
+.courses .container .card p {
+    padding: 0 20px;
+}
+
+@media (max-width: 1023px) {
+    .courses .container .cards,
+    .courses .container  .carts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .courses {
+        padding: 64px 0;
+    }
+    .courses .container .cards, 
+    .courses .container  .carts {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
